@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAVELAy | Explore the World</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <i class="fa-solid fa-plane-departure me-2"></i>
+          TRAVELAy
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#packages"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Packages
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#packages"> Europe Plan </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#packages"> World Plan </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#packages"> Asia Plan </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-warning fw-bold rounded-pill px-4 ms-lg-3"
+            data-bs-toggle="modal"
+            data-bs-target="#bookingModal"
+          >
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- HOME -->
+      <section id="home" class="jumbotron">
+        <div class="hero-content">
+          <h1>Explore</h1>
+
+          <p>
+            Discover new destinations, exciting adventures, and carefully
+            planned travel experiences.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#destinations" class="btn btn-primary btn-lg">
+              Explore Destinations
+            </a>
+
+            <button
+              class="btn btn-outline-light btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+            >
+              Plan My Trip
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAROUSEL -->
+      <section class="carousel-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Travel With Us</h2>
+          </div>
+          <div
+            id="travelCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="1"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+
+            <div class="carousel-inner rounded-4 shadow">
+              <div class="carousel-item active">
+                <img
+                  src="https://etias.com/assets/uploads/European%20Tourist%20Attractions%20Five%20Touristy%20Places%20Worth%20the%20Hype.jpg"
+                  class="d-block w-100"
+                  alt="Beautiful travel destination"
+                />
+
+                <div class="carousel-caption">
+                  <h3>Discover New Places</h3>
+                  <p>
+                    Experience beautiful landscapes and unforgettable
+                    destinations.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://media.timeout.com/images/106155458/1024/576/image.webp"
+                  class="d-block w-100"
+                  alt="Sydney Australia"
+                />
+
+                <div class="carousel-caption">
+                  <h3>Adventure Awaits</h3>
+                  <p>Explore exciting cities and experience new cultures.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img
+                  src="https://images.ctfassets.net/wv75stsetqy3/DaKdXY2tkQGWeVQiCbSx7/ac01166282697e4e0cafb99180d35cd1/Thailand_Featured.jpg?q=60&fit=fill&fm=webp"
+                  class="d-block w-100"
+                  alt="Asian destination"
+                />
+
+                <div class="carousel-caption">
+                  <h3>Make Memories</h3>
+                  <p>Turn every journey into a memorable experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#travelCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#travelCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="sectionAbout">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Us</h2>
+
+            <p>
+              TRAVELAy makes travel planning simple and convenient. We provide
+              helpful travel services to make every journey more organized,
+              comfortable, and enjoyable.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- FLIGHT TICKETS -->
+            <div class="col-lg-4 col-md-6">
+              <div class="serviceBox h-100">
+                <div class="service-icon">
+                  <span>
+                    <i class="bi bi-airplane-fill"></i>
+                  </span>
+                </div>
+
+                <h3 class="title">Flight Tickets</h3>
+
+                <p class="description">
+                  We help travelers find suitable flight options based on their
+                  destination, preferred schedule, and travel plans.
+                </p>
+              </div>
+            </div>
+
+            <!-- ACCOMMODATION -->
+            <div class="col-lg-4 col-md-6">
+              <div class="serviceBox h-100">
+                <div class="service-icon">
+                  <span>
+                    <i class="bi bi-building-fill"></i>
+                  </span>
+                </div>
+
+                <h3 class="title">Accommodation</h3>
+
+                <p class="description">
+                  We provide accommodation options in convenient locations,
+                  helping travelers find a comfortable place to stay.
+                </p>
+              </div>
+            </div>
+
+            <!-- TRAVEL ACTIVITIES -->
+            <div class="col-lg-4 col-md-6">
+              <div class="serviceBox h-100">
+                <div class="service-icon">
+                  <span>
+                    <i class="bi bi-map-fill"></i>
+                  </span>
+                </div>
+
+                <h3 class="title">Travel Activities</h3>
+
+                <p class="description">
+                  We provide suggested activities and travel plans to help you
+                  explore your destination while enjoying your trip.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BANNER -->
+      <section class="banner">
+        <div class="bannerContent">
+          <h2>Visit the Philippines.</h2>
+
+          <p>The place to find rest, picturesque places and amazing people.</p>
+        </div>
+      </section>
+
+      <!-- DESTINATIONS -->
+      <section id="destinations" class="destinations-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Choose Your Next Adventure</h2>
+
+            <p>
+              Explore our carefully planned travel options and discover
+              destinations that are perfect for your next adventure.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- ITALY -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card destination-card h-100 shadow-sm">
+                <img
+                  src="https://etias.com/assets/uploads/European%20Tourist%20Attractions%20Five%20Touristy%20Places%20Worth%20the%20Hype.jpg"
+                  class="card-img-top"
+                  alt="Italy"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-primary align-self-start mb-2">
+                    EUROPE PLAN
+                  </span>
+
+                  <h3 class="card-title">Italy</h3>
+
+                  <p class="card-text">
+                    Explore vibrant cities, beautiful beaches, delicious food,
+                    and rich cultural experiences throughout Italy.
+                  </p>
+
+                  <div class="mt-auto pt-3">
+                    <button
+                      class="btn btn-primary w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#italyModal"
+                    >
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AUSTRALIA -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card destination-card h-100 shadow-sm">
+                <img
+                  src="https://static.toiimg.com/photo/58515800.cms"
+                  class="card-img-top"
+                  alt="Australia"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-success align-self-start mb-2">
+                    WORLD-WIDE PLAN
+                  </span>
+
+                  <h3 class="card-title">Australia</h3>
+
+                  <p class="card-text">
+                    Australia's most populous and, arguably, most exciting city,
+                    Sydney really is a showstopper.
+                  </p>
+
+                  <div class="mt-auto pt-3">
+                    <button
+                      class="btn btn-primary w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#australiaModal"
+                    >
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ASIA -->
+            <div class="col-lg-4 col-md-6">
+              <div class="card destination-card h-100 shadow-sm">
+                <img
+                  src="https://images.trvl-media.com/lodging/1000000/70000/68800/68751/2b67e37d.jpg?impolicy=resizecrop&rw=1200&ra=fit"
+                  class="card-img-top"
+                  alt="Southeast Asia"
+                />
+
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-danger align-self-start mb-2">
+                    ASIA PLAN
+                  </span>
+
+                  <h3 class="card-title">Southeast Asia</h3>
+
+                  <p class="card-text">
+                    Visit Vietnam, Cambodia, the Philippines, and Thailand while
+                    experiencing the diverse cultures and beauty of Asia.
+                  </p>
+
+                  <div class="mt-auto pt-3">
+                    <button
+                      class="btn btn-primary w-100"
+                      data-bs-toggle="modal"
+                      data-bs-target="#asiaModal"
+                    >
+                      More Information
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PACKAGES -->
+      <section id="packages" class="packages-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Travel Packages</h2>
+
+            <p>
+              Choose a package and start planning your next unforgettable
+              journey.
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="package-card h-100">
+                <div class="package-icon">
+                  <img
+                    src="https://i.pinimgproxy.com/?url=aHR0cHM6Ly9jZG4taWNvbnMtcG5nLmZsYXRpY29uLmNvbS8yNTYvMTA2MDEvMTA2MDEyODAucG5n&ts=1786366397&sig=28d7446b18f4b02b4bc32995d157dbb0bf0c0c3b2098df63ffb92b8baca6d0f5"
+                    alt="Europe Plan"
+                  />
+                </div>
+
+                <h3>Europe Plan</h3>
+
+                <p>Explore Italy and other beautiful European destinations.</p>
+
+                <a href="#destinations" class="btn btn-outline-primary">
+                  View Destinations
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="package-card h-100">
+                <div class="package-icon">
+                  <img
+                    src="https://png.pngtree.com/png-vector/20190628/ourmid/pngtree-world-tour-icon-for-your-project-png-image_1521409.jpg"
+                    alt="World-Wide Plan"
+                  />
+                </div>
+
+                <h3>World-Wide Plan</h3>
+
+                <p>
+                  Discover famous cities, natural wonders, and global
+                  adventures.
+                </p>
+
+                <a href="#destinations" class="btn btn-outline-primary">
+                  View Destinations
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="package-card h-100">
+                <div class="package-icon">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/6195/6195239.png"
+                    alt="World-Wide Plan"
+                  />
+                </div>
+
+                <h3>Asia Plan</h3>
+
+                <p>
+                  Experience the cultures, food, beaches, and beauty of Asia.
+                </p>
+
+                <a href="#destinations" class="btn btn-outline-primary">
+                  View Destinations
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact-section">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="contact-box shadow-sm">
+                <div class="section-heading">
+                  <span class="section-label">GET IN TOUCH</span>
+
+                  <h2>Plan Your Next Trip</h2>
+
+                  <p>
+                    Have questions about our destinations or travel packages?
+                    Send us a message and we'll be happy to help.
+                  </p>
+                </div>
+
+                <!-- 12. FORM -->
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label"> Full Name </label>
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter your name"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">
+                        Email Address
+                      </label>
+
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label for="destinationInput" class="form-label">
+                        Preferred Destination
+                      </label>
+
+                      <select class="form-select" id="destinationInput">
+                        <option selected>Choose a destination</option>
+                        <option>Thailand</option>
+                        <option>Australia</option>
+                        <option>Southeast Asia</option>
+                      </select>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label"> Message </label>
+
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="4"
+                        placeholder="Tell us about your travel plans..."
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary px-4">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3>
+              <i class="fa-solid fa-plane-departure me-2"></i>
+              TRAVELAy
+            </h3>
+
+            <p>Making travel planning easier, one destination at a time.</p>
+          </div>
+
+          <div class="col-md-6 text-md-end">
+            <h4>Follow Us</h4>
+
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="#" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+
+              <a href="#" aria-label="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="text-center mb-0">
+          © 2026 TRAVELAy | UNIVERSITY OF CABUYAO | 2BSIT-A
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
